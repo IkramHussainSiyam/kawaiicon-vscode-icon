@@ -1,0 +1,74 @@
+{
+  "name": "kawaiicon-vscode-icon",
+  "displayName": "Kawaiicon",
+  "description": "A set of kawaii (cute) vscode icons. Inspired by bearded-icon and glyph for vscode",
+  "publisher": "IkramHussainSiyam",
+  "license": "MIT",
+  "author": {
+    "name": "Ikram Hussain Siyam",
+    "url": "https://github.com/IkramHussainSiyam",
+    "email": "ikramhussaindev404@gmail.com"
+  },
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.92.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IkramHussainSiyam/kawaiicon-vscode-icon"
+  },
+  "bugs": {
+    "url": "https://github.com/IkramHussainSiyam/kawaiicon-vscode-icon/issues",
+    "email": "ikramhussaindev404@gmail.com"
+  },
+  "homepage": "https://github.com/IkramHussainSiyam/kawaiicon-vscode-icon",
+  "keywords": [
+    "kawaii",
+    "kawaii icon",
+    "kawaiicon",
+    "icon",
+    "icon-theme",
+    "vscode-icon",
+    "themes"
+  ],
+  "icon": "icon.png",
+  "categories": [
+    "Other",
+    "Themes"
+  ],
+  "galleryBanner": {
+    "color": "#deddf7",
+    "theme": "dark"
+  },
+  "contributes": {
+    "iconThemes": [
+      {
+        "id": "kawaii-vscode-icon",
+        "label": "Kawaiicon",
+        "path": "./icons.json"
+      }
+    ]
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.1",
+    "node": "^20.5.0",
+    "vscode-test": "^1.6.1"
+  },
+  "scripts": {
+    "build": "vite-node src/main.ts",
+    "dev": "vite-node src/main.ts -w",
+    "fix": "prettier --write src/**/*.ts"
+  },
+  "dependencies": {
+    "@types/node": "^20.9.0",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "eslint": "^8.53.0",
+    "globby": "^14.0.0",
+    "ovsx": "^0.8.3",
+    "prettier": "^3.0.3",
+    "typescript": "^5.2.2",
+    "vite-node": "^0.34.6",
+    "vsce": "^2.15.0"
+  }
+}
